@@ -22,6 +22,7 @@ module.exports = (logSources, printer) => {
       queue.push({ log: logSources[logSourceIndex].pop(), logSourceIndex });
     }
   }
+
   printer.done();
   return console.log("Sync sort complete.");
 };
